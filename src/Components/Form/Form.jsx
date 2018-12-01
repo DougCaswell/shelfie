@@ -103,7 +103,7 @@ class Form extends Component {
                     onChange={(event) => { this.updatePrice(event) }}
                 />
                 <button onClick={() => this.cancel()} >Cancel</button>
-                {this.state.selected ? <button onClick={() => this.update()} >Save Changes</button> : <button onClick={() => this.add()}>Add to Inventory</button> }
+                {this.state.selected ? <button onClick={() => {this.update()}} >Save Changes</button> : <button onClick={() => this.add()}>Add to Inventory</button> }
             </div >
         )
     }

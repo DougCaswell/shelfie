@@ -5,7 +5,6 @@ class Dashboard extends Component {
     render() {
         return (
             <div className='Dashboard'>
-                Dashboard Component
                 {this.props.inventory.map((product, i) => {
                     return (
                         <Product select={this.props.select} cb={this.props.cb} item={product} key={i} />
